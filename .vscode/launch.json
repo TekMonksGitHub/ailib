@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch CSV Driver",
             "program": "${workspaceFolder}/csvdriver.js",
-            "args":["${workspaceFolder}/test.csv", "Result", "decisiontree"]
+            "args":["${workspaceFolder}/test.csv", "Result", "entropy"]
         }
     ]
 }

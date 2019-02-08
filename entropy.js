@@ -42,7 +42,7 @@ exports.getEntropy = function getEntropy(stream, scratchpad) {
     return scratchpad;
 }
 
-exports.csvdriver = input => exports.getDecisionTree(input.outputs);
+exports.csvdriver = input => exports.getEntropy(input.outputs).entropy;
 
 if (require.main === module) {
     let stream = ["No","No","Yes","Yes","Yes","No","Yes","No","Yes","Yes","Yes","Yes","Yes","No"];
