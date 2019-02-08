@@ -69,6 +69,8 @@ function reduceSample(column, value, sample) {
     return reducedSample;
 }
 
+exports.csvdriver = input => exports.getDecisionTree(input);
+
 if (require.main === module) {
     let tree = exports.getDecisionTree({
         columns: ["Outlook", "Temp", "Humidity", "Wind"],
