@@ -8,7 +8,7 @@ function callAlgo(input, algo) {
     let output = require(`${__dirname}/${algo}.js`).csvdriver(input);
     console.log("Output");
     console.log("====================================");
-    console.log(JSON.stringify(output));
+    console.log(JSON.stringify(output, null, 4));
 }
 
 main(); function main() {
